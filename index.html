@@ -173,6 +173,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>#广耀是小可爱</p>
+<p>  package tools;</p>
+<p>import java.text.SimpleDateFormat;<br>import java.util.Date;<br>import java.util.TimeZone;</p>
+<p>public class DateTools {<br>    //设置时区<br>    static{<br>        TimeZone zone=TimeZone.getTimeZone(“Asia/Shanghai”);<br>        //将该时区设置为默认时区<br>        TimeZone.setDefault(zone);<br>    }<br>    //获得指定格式的当前日期<br>    public static String getDateForFormat(String dataFormat) {<br>        //获得当前日期<br>        Date d1=new Date();<br>        //编写日期格式化对象,对日期进行格式化处理<br>        SimpleDateFormat sdf=new SimpleDateFormat(dataFormat);<br>        return sdf.format(d1);<br>    }<br>}</p>
 
       
 
